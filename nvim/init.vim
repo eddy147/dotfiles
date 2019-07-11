@@ -11,7 +11,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'guns/vim-clojure-static'
 Plug 'tpope/vim-fireplace'
-Plug 'luochen1990/rainbow'
 Plug 'guns/vim-sexp'
 Plug 'guns/vim-sexp'
 Plug 'venantius/vim-cljfmt'
@@ -29,10 +28,12 @@ Plug 'tpope/vim-fugitive'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'arnaud-lb/vim-php-namespace'
 Plug 'dgraham/vim-eslint'
-Plug 'bling/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'eslint/eslint'
 Plug 'scrooloose/syntastic'
+Plug 'tobyS/vmustache'
+Plug 'SirVer/ultisnips' "needed for pdv
+Plug 'tobyS/pdv'
+Plug 'scrooloose/nerdtree'
 
 call plug#end()
 
@@ -62,14 +63,15 @@ set nocompatible
 filetype off
 
 " Airline config
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#branch#enabled = 1
-let g:airline_powerline_fonts = 1
-let g:onedark_hide_endofbuffer=1
-let g:airline_theme='onedark'
+"let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#branch#enabled = 1
+"let g:airline_powerline_fonts = 1
+"let g:onedark_hide_endofbuffer=1
+"let g:airline_theme='onedark'
 
 syntax on
-colorscheme onedark
+"colorscheme angr
+colorscheme challenger_deep
 
 " For plugins to load correctly
 filetype plugin indent on
@@ -81,7 +83,7 @@ filetype plugin indent on
 set modelines=0
 
 " Show line numbers
-set number
+set nonumber
 
 " Show file stats
 set ruler
@@ -290,3 +292,101 @@ vmap <silent><Leader>ee :<C-U>call phpactor#ExtractExpression(v:true)<CR>
 
 " Extract method from selection
 vmap <silent><Leader>em :<C-U>call phpactor#ExtractMethod()<CR>
+
+" Find usages/references
+nmap <Leader>fr :call phpactor#FindReferences()<CR> 
+
+"Status line
+function! GitBranch()
+  return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
+endfunction
+
+function! StatuslineGit()
+  let l:branchname = GitBranch()
+  return strlen(l:branchname) > 0?'  '.l:branchname.' ':''
+endfunction
+
+set statusline=
+set statusline+=%#PmenuSel#
+set statusline+=%{StatuslineGit()}
+set statusline+=%#LineNr#
+set statusline+=\ %f
+set statusline+=%m\
+set statusline+=%=
+set statusline+=%#CursorColumn#
+set statusline+=\ %y
+set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
+set statusline+=\[%{&fileformat}\]
+set statusline+=\ %p%%
+set statusline+=\ %l:%c
+set statusline+=\ 
+
+
+" Just like NERDTree
+" let g:netrw_banner=0
+" let g:netrw_winsize=20
+" let g:netrw_liststyle=3
+" let g:netrw_localrmdir='rm -r'
+" toggle netrw on the left side of the editor
+" nnoremap <leader>n :Lexplore<CR>
+
+" settings for NERDTree
+nnoremap <leader>n :NERDTree<CR>
+let NERDTreeWinSize=40
+let NERDTreeShowHidden=1
+nmap ,n :NERDTreeFind<CR>
+
+" PhpDoc (tobyS/pdv)
+let g:pdv_template_dir=$HOME . "/.vim/plugged/pdv/templates_snip"
+nnoremap <buffer> <leader>d :call pdv#DocumentWithSnip()<CR>
+
+
+" Custom function: display the current function
+fun FunctionName()
+  "set a mark at our current position
+  normal mz
+  "while foundcontrol == 1, keep looking up the line to find something that
+  "isn't a control statement
+  let foundcontrol = 1
+  while (foundcontrol)
+    "find the previous '{' and get the line above it
+    ?{
+    normal k0
+    let tempstring = getline(".")
+    "if the line matches a control statement, set found control to 1 so
+    "we can look farther back in the file for the beginning of the
+    "actual function we are in
+    if(match(tempstring, "while") >= 0)
+      let foundcontrol = 1
+    elseif(match(tempstring, "for") >= 0)
+      let foundcontrol = 1
+    elseif(match(tempstring, "if") >= 0)
+      let foundcontrol = 1
+    elseif(match(tempstring, "else") >= 0)
+      let foundcontrol = 1
+    elseif(match(tempstring, "try") >= 0)
+      let foundcontrol = 1
+    elseif(match(tempstring, "catch") >= 0)
+      let foundcontrol = 1
+    else
+      normal `z
+      let foundcontrol = 0
+      return tempstring
+    endif
+  endwhile
+  return tempstring
+endfun
+
+"this mapping assigns a variable to be the name of the function found by
+"FunctionName() then echoes it back so it isn't erased if Vim shifts your
+"location on screen returning to the line you started from in FunctionName()
+map \func :let name = FunctionName()<CR> :echo name<CR>
+
+au BufReadPost *.jt set syntax=xml
+au BufReadPost *.lock set syntax=json
+
+" Open gdiff vertically
+set diffopt+=vertical
+
+" Close buffer, but not the window
+map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
