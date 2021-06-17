@@ -91,114 +91,36 @@
     "gitlens.codeLens.recentChange.command": "gitlens.showQuickFileHistory",
     "editor.tokenColorCustomizations": {
         "[Default Light+]": {
+            "comments": "#999",
+            "functions": "#096",
+            "keywords": "#939",
+            "numbers": "#C63",
+            "strings": "#069",
+            "types": "#930",
+            "variables": "#000",
             "textMateRules": [
-                {
-                    "scope": "keyword",
-                    "settings": {
-                        "foreground": "#000",
-                        "fontStyle": "bold"
-                    }
-                },
-                {
-                    "scope": "string",
-                    "settings": {
-                        "foreground": "#000",
-                        "fontStyle": "italic"
-                    }
-                },
-                {
-                    "scope": ["keyword.control", "variable.language"],
-                    "settings": {
-                        "foreground": "#B09"
-                    }
-                },
-                {
-                    "scope": "keyword.other.phpdoc.php",
-                    "settings": {
-                        "foreground": "#767",
-                        "fontStyle": ""
-                    }
-                },
-                {
-                    "scope": "storage.type",
-                    "settings": {
-                        "foreground": "#000",
-                        "fontStyle": "italic"
-                    }
-                },
-                {
-                    "scope": ["storage.modifier", "constant.language"],
-                    "settings": {
-                        "foreground": "#02A",
-                        "fontStyle": "bold"
-                    }
-                },
-                {
-                    "scope": "support.function",
-                    "settings": {
-                        "foreground": "#B09",
-                        "fontStyle": "italic"
-                    }
-                },
                 {
                     "scope": "punctuation.definition.variable.php",
                     "settings": {
-                        "foreground": "#000",
-                        "fontStyle": "bold"
-                    }
-                }
-            ]
-        },
-        "[Visual Studio Dark]": {
-            "textMateRules": [
-                {
-                    "scope": "keyword",
-                    "settings": {
-                        "foreground": "#cfc"
+                        "foreground": "#069"
                     }
                 },
                 {
-                    "scope": "meta.embedded",
+                    "scope": ["keyword", "storage.modifier", "variable.language"],
                     "settings": {
-                        "foreground": "#cff"
+                        "foreground": "#04f"
                     }
                 },
                 {
-                    "scope": "comment",
+                    "scope": ["entity.name.type", "support.class", "entity.other.inherited-class"],
                     "settings": {
-                        "foreground": "#ccc",
-                        "fontStyle": "italic"
+                        "foreground": "#096"
                     }
                 },
                 {
-                    "scope": ["string","punctuation.section.embedded.begin.php"],
+                    "scope": ["punctuation.section.embedded.begin.php"],
                     "settings": {
-                        "foreground": "#ffc"
-                    }
-                },
-                {
-                    "scope": ["keyword.control", "variable.language", "keyword.other.phpdoc.php", "support.function"],
-                    "settings": {
-                        "foreground": "#fcc"
-                    }
-                },
-                {
-                    "scope": ["storage.type", "support.class.php"],
-                    "settings": {
-                        "foreground": "#ccf",
-                        "fontStyle": "italic"
-                    }
-                },
-                {
-                    "scope": ["storage.modifier", "constant.language"],
-                    "settings": {
-                        "foreground": "#9cf"
-                    }
-                },
-                {
-                    "scope": "punctuation.definition.variable.php",
-                    "settings": {
-                        "foreground": "#fff"
+                        "foreground": "#969"
                     }
                 }
             ]
