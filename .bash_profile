@@ -1,17 +1,48 @@
 source ~/.bashrc
-if [ -f ~/.bash_git ]; then
-    . ~/.bash_git
-fi
-
+# store colors
+MAGENTA="\[\033[0;35m\]"
+YELLOW="\[\033[01;33m\]"
+BLUE="\[\033[00;34m\]"
+LIGHT_GRAY="\[\033[0;37m\]"
+CYAN="\[\033[0;36m\]"
+GREEN="\[\033[00;32m\]"
+RED="\[\033[0;31m\]"
+BLACK="\[\033[0;30m\]"
+VIOLET='\[\033[01;35m\]'
+ 
 function color_my_prompt {
-    local __user_and_host="\[\033[01;32m\]\u@\h"
-    local __cur_location="\[\033[01;34m\]\w"
-    local __git_branch_color="\[\033[31m\]"
-    #local __git_branch="\`ruby -e \"print (%x{git branch 2> /dev/null}.grep(/^\*/).first || '').gsub(/^\* (.+)$/, '(\1) ')\"\`"
-    local __git_branch='`git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\ /`'
-    local __prompt_tail="\[\033[35m\]$"
-    local __last_color="\[\033[00m\]"
-    local __git_dirty='`git rev-parse 2>/dev/null && (git diff --no-ext-diff --quiet --exit-code 2> /dev/null || echo -e \*)`'
-    export PS1="$__user_and_host $__cur_location $__git_branch_color$__git_branch$__prompt_tail$__last_color "
+  local __user_and_host="$BLACK\u@\h"
+  local __cur_location="$VIOLET\w"           # capital 'W': current directory, small 'w': full file path
+  local __git_branch_color="$GREEN"
+  local __prompt_tail="$BLACK$"
+  local __user_input_color="$BLACK"
+  local __git_branch=$(__git_ps1); 
+  
+  # colour branch name depending on state
+  if [[ "${__git_branch}" =~ "*" ]]; then     # if repository is dirty
+      __git_branch_color="$BLUE"
+  elif [[ "${__git_branch}" =~ "$" ]]; then   # if there is something stashed
+      __git_branch_color="$YELLOW"
+  elif [[ "${__git_branch}" =~ "%" ]]; then   # if there are only untracked files
+      __git_branch_color="$RED"
+  elif [[ "${__git_branch}" =~ "+" ]]; then   # if there are staged files
+      __git_branch_color="$VIOLET"
+  fi
+   
+  # Build the PS1 (Prompt String)
+  PS1="$__user_and_host$__cur_location\n$__git_branch_color$__git_branch $__prompt_tail$__user_input_color "
 }
-color_my_prompt
+ 
+# configure PROMPT_COMMAND which is executed each time before PS1
+export PROMPT_COMMAND=color_my_prompt
+ 
+# if .git-prompt.sh exists, set options and execute it
+if [ -f ~/.git-prompt.sh ]; then
+  GIT_PS1_SHOWDIRTYSTATE=true
+  GIT_PS1_SHOWSTASHSTATE=true
+  GIT_PS1_SHOWUNTRACKEDFILES=true
+  GIT_PS1_SHOWUPSTREAM="auto"
+  GIT_PS1_HIDE_IF_PWD_IGNORED=true
+  GIT_PS1_SHOWCOLORHINTS=true
+  . ~/.git-prompt.sh
+fi
