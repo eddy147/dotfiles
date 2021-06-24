@@ -1,34 +1,19 @@
 source ~/.bashrc
 
-source ~/.git-prompt.sh
-export GIT_PS1_SHOWDIRTYSTATE=true      # staged '+', unstaged '*'
-export GIT_PS1_SHOWUNTRACKEDFILES=true  # '%' untracked files
-export GIT_PS1_SHOWUPSTREAM="auto"      # '<' behind, '>' ahead, '<>' diverged, '=' no difference
-export GIT_PS1_SHOWSTASHSTATE=true      # '$' something is stashed
+# git clone https://github.com/darkwebdesign/advanced-ps1.git ~/.advanced-ps1
 
-function __prompt_command() {
-    local ERRORCODE="$?"
-    PS1="${debian_chroot:+($debian_chroot)}"
+# Configure advanced PS1.
+export ADVANCED_PS1_SHOWNEWLINE=1;
+export ADVANCED_PS1_SHOW0EXITCODE=0;
+export ADVANCED_PS1_SHOWEXITCODEMESSAGE=0;
+export ADVANCED_PS1_SHOW0DURATION=0;
+export ADVANCED_PS1_SHOWTIME12H=0;
 
-    # Errorcode (conditional)
-    if [ ${ERRORCODE} != 0 ]; then
-        PS1+="\e[90m    $(echo -e '\u2570\u2500\u2770')\e[1;31m$ERRORCODE\e[90m$(echo -e '\u2771')\e[0m\n"
-    fi
+# Source advanced PS1.
+source "${HOME}/.advanced-ps1/advanced-ps1";
 
-    # Main line
-    local c="$(echo -e '\u256d\u2500')"
-    if [[ "$(dirs -p | wc -l)" != "1" ]] ; then
-        local c="$(echo -e '\u2934') "
-    fi
-    PS1+="\e[90m$c\e[0m"
-    if [[ ! -z "${VIRTUAL_ENV}" ]]; then
-        PS1+="\e[90m$(echo -e '\u2770')\e[32m$(basename $VIRTUAL_ENV)\e[90m$(echo -e '\u2771')\e[0m"
-    fi
-    PS1+=" \e[33;1m\w\e[m"
-    PS1+="\$(__git_ps1)"
+# Enable advanced PS1 duration measurement.
+trap '__advanced_ps1_debug_trap' DEBUG;
 
-    # Command Line
-    PS1+="\n\e[90m$(echo -e '\u2570\u2500\u2bc8') \e[0m"
-}
-
-export PROMPT_COMMAND=__prompt_command
+# Enable advanced PS1.
+PROMPT_COMMAND='__advanced_ps1';
