@@ -1,48 +1,34 @@
 source ~/.bashrc
-# store colors
-MAGENTA="\[\033[0;35m\]"
-YELLOW="\[\033[01;33m\]"
-BLUE="\[\033[00;34m\]"
-LIGHT_GRAY="\[\033[0;37m\]"
-CYAN="\[\033[0;36m\]"
-GREEN="\[\033[00;32m\]"
-RED="\[\033[0;31m\]"
-BLACK="\[\033[0;30m\]"
-VIOLET='\[\033[01;35m\]'
- 
-function color_my_prompt {
-  local __user_and_host="$BLACK\u@\h"
-  local __cur_location="$VIOLET\w"           # capital 'W': current directory, small 'w': full file path
-  local __git_branch_color="$GREEN"
-  local __prompt_tail="$BLACK$"
-  local __user_input_color="$BLACK"
-  local __git_branch=$(__git_ps1); 
-  
-  # colour branch name depending on state
-  if [[ "${__git_branch}" =~ "*" ]]; then     # if repository is dirty
-      __git_branch_color="$BLUE"
-  elif [[ "${__git_branch}" =~ "$" ]]; then   # if there is something stashed
-      __git_branch_color="$YELLOW"
-  elif [[ "${__git_branch}" =~ "%" ]]; then   # if there are only untracked files
-      __git_branch_color="$RED"
-  elif [[ "${__git_branch}" =~ "+" ]]; then   # if there are staged files
-      __git_branch_color="$VIOLET"
-  fi
-   
-  # Build the PS1 (Prompt String)
-  PS1="$__user_and_host$__cur_location\n$__git_branch_color$__git_branch $__prompt_tail$__user_input_color "
+
+source ~/.git-prompt.sh
+export GIT_PS1_SHOWDIRTYSTATE=true      # staged '+', unstaged '*'
+export GIT_PS1_SHOWUNTRACKEDFILES=true  # '%' untracked files
+export GIT_PS1_SHOWUPSTREAM="auto"      # '<' behind, '>' ahead, '<>' diverged, '=' no difference
+export GIT_PS1_SHOWSTASHSTATE=true      # '$' something is stashed
+
+function __prompt_command() {
+    local ERRORCODE="$?"
+    PS1="${debian_chroot:+($debian_chroot)}"
+
+    # Errorcode (conditional)
+    if [ ${ERRORCODE} != 0 ]; then
+        PS1+="\e[90m    $(echo -e '\u2570\u2500\u2770')\e[1;31m$ERRORCODE\e[90m$(echo -e '\u2771')\e[0m\n"
+    fi
+
+    # Main line
+    local c="$(echo -e '\u256d\u2500')"
+    if [[ "$(dirs -p | wc -l)" != "1" ]] ; then
+        local c="$(echo -e '\u2934') "
+    fi
+    PS1+="\e[90m$c\e[0m"
+    if [[ ! -z "${VIRTUAL_ENV}" ]]; then
+        PS1+="\e[90m$(echo -e '\u2770')\e[32m$(basename $VIRTUAL_ENV)\e[90m$(echo -e '\u2771')\e[0m"
+    fi
+    PS1+=" \e[33;1m\w\e[m"
+    PS1+="\$(__git_ps1)"
+
+    # Command Line
+    PS1+="\n\e[90m$(echo -e '\u2570\u2500\u2bc8') \e[0m"
 }
- 
-# configure PROMPT_COMMAND which is executed each time before PS1
-export PROMPT_COMMAND=color_my_prompt
- 
-# if .git-prompt.sh exists, set options and execute it
-if [ -f ~/.git-prompt.sh ]; then
-  GIT_PS1_SHOWDIRTYSTATE=true
-  GIT_PS1_SHOWSTASHSTATE=true
-  GIT_PS1_SHOWUNTRACKEDFILES=true
-  GIT_PS1_SHOWUPSTREAM="auto"
-  GIT_PS1_HIDE_IF_PWD_IGNORED=true
-  GIT_PS1_SHOWCOLORHINTS=true
-  . ~/.git-prompt.sh
-fi
+
+export PROMPT_COMMAND=__prompt_command
