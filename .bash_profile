@@ -1,19 +1,12 @@
 source ~/.bashrc
 
-# git clone https://github.com/darkwebdesign/advanced-ps1.git ~/.advanced-ps1
+if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
+    GIT_PROMPT_ONLY_IN_REPO=1
+    source $HOME/.bash-git-prompt/gitprompt.sh
+fi
 
-# Configure advanced PS1.
-export ADVANCED_PS1_SHOWNEWLINE=1;
-export ADVANCED_PS1_SHOW0EXITCODE=0;
-export ADVANCED_PS1_SHOWEXITCODEMESSAGE=0;
-export ADVANCED_PS1_SHOW0DURATION=0;
-export ADVANCED_PS1_SHOWTIME12H=0;
+function _mix_hex_latest() {
+    mix hex.info $1 | grep 'Config:' | sed 's/.*{\(.*\)}[^}]*/{\1},/'
+}
 
-# Source advanced PS1.
-source "${HOME}/.advanced-ps1/advanced-ps1";
-
-# Enable advanced PS1 duration measurement.
-trap '__advanced_ps1_debug_trap' DEBUG;
-
-# Enable advanced PS1.
-PROMPT_COMMAND='__advanced_ps1';
+alias mix_hex_latest='_mix_hex_latest'
