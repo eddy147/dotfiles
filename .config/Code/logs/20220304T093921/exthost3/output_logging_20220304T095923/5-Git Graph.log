@@ -1,9 +1,0 @@
-[2022-03-04 09:59:23.957] Starting Git Graph ...
-[2022-03-04 09:59:23.990] Using git (version: 2.25.1)
-[2022-03-04 09:59:23.997] Started Git Graph - Ready to use!
-[2022-03-04 09:59:23.997] Searching workspace for new repos ...
-[2022-03-04 09:59:24.002] > git rev-parse --show-toplevel
-[2022-03-04 09:59:24.004] Added new repo: /home/eddy/projects/driveulu/ulu-rails
-[2022-03-04 09:59:24.050] Successfully set Visual Studio Code Context "git-graph:codiconsSupported" to "true"
-[2022-03-04 09:59:24.057] Completed searching workspace for new repos
-[2022-03-04 09:59:24.057] Showing "Git Graph" Status Bar Item

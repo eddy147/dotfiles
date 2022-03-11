@@ -1,9 +1,0 @@
-[2022-03-09 21:13:56.320] [sharedprocess] [info] Starting worker process with pid 302819 (type: fileWatcher, window: 1).
-[2022-03-09 21:13:56.358] [sharedprocess] [info] Deleted from disk eamodio.gitlens /home/eddy/.vscode/extensions/eamodio.gitlens-12.0.1
-[2022-03-09 21:14:00.807] [sharedprocess] [info] Getting Manifest... grapecity.gc-excelviewer
-[2022-03-09 21:14:01.629] [sharedprocess] [info] Installing extension: grapecity.gc-excelviewer
-[2022-03-09 21:14:03.470] [sharedprocess] [info] Downloaded extension: grapecity.gc-excelviewer /home/eddy/.config/Code/CachedExtensionVSIXs/grapecity.gc-excelviewer-4.2.53
-[2022-03-09 21:14:03.596] [sharedprocess] [info] Extracted extension to /home/eddy/.vscode/extensions/.66d101c2-39b8-4c3c-aa23-553b15de2aa2: grapecity.gc-excelviewer
-[2022-03-09 21:14:03.601] [sharedprocess] [info] Renamed to /home/eddy/.vscode/extensions/grapecity.gc-excelviewer-4.2.53
-[2022-03-09 21:14:03.602] [sharedprocess] [info] Extracting completed. grapecity.gc-excelviewer
-[2022-03-09 21:14:03.605] [sharedprocess] [info] Extension installed successfully: grapecity.gc-excelviewer
