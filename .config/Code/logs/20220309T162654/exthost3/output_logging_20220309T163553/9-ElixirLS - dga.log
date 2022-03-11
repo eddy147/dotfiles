@@ -1,0 +1,28 @@
+Started ElixirLS v0.8.2
+Elixir version: "1.10.4 (compiled with Erlang/OTP 23)"
+Erlang version: "23"
+ElixirLS compiled with Elixir 1.10.4 and erlang 22
+MIX_ENV: test
+MIX_TARGET: 
+==> processing
+Compiling 3 files (.ex)
+[Warn  - 4:35:57 PM] warning: unused alias VehicleUserPermission
+  lib/processing/helpers/trip_correct_odometers.ex:15
+
+[Warn  - 4:35:57 PM] warning: unused alias VehicleUserPrivacyLog
+  lib/processing/helpers/trip_correct_odometers.ex:16
+
+[Info  - 4:35:57 PM] Compile took 999 milliseconds
+[Info  - 4:35:57 PM] [ElixirLS Dialyzer] Checking for stale beam files
+[Info  - 4:35:57 PM] [ElixirLS WorkspaceSymbols] Indexing...
+[Info  - 4:35:57 PM] [ElixirLS WorkspaceSymbols] Module discovery complete
+[Info  - 4:35:57 PM] [ElixirLS WorkspaceSymbols] 20 callbacks added to index
+[Info  - 4:35:57 PM] [ElixirLS Dialyzer] Found 3 changed files in 77 milliseconds
+[Info  - 4:35:58 PM] [ElixirLS WorkspaceSymbols] 252 modules added to index
+[Info  - 4:35:58 PM] [ElixirLS Dialyzer] Analyzing 2 modules: [Processing.Helpers.TripCorrectOdometers, Processing.TripGenerator]
+[Info  - 4:35:58 PM] [ElixirLS WorkspaceSymbols] 294 types added to index
+[Info  - 4:35:59 PM] [ElixirLS Dialyzer] Analysis finished in 1317 milliseconds
+[Info  - 4:35:59 PM] Dialyzer analysis is up to date
+[Info  - 4:36:00 PM] [ElixirLS WorkspaceSymbols] 4665 functions added to index
+[Info  - 4:36:00 PM] [ElixirLS Dialyzer] Writing manifest...
+[Info  - 4:36:01 PM] [ElixirLS Dialyzer] Done writing manifest in 1311 milliseconds.

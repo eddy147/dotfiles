@@ -1,0 +1,23 @@
+[2022-03-09T13:13:57.089Z] Validating found git in: git
+[2022-03-09T13:13:57.118Z] Using git  from git
+[2022-03-09T13:13:57.216Z] > git rev-parse --git-dir [29ms]
+[2022-03-09T13:13:57.218Z] Open repository: /home/eddy/projects/driveulu/dga
+[2022-03-09T13:13:57.282Z] > git symbolic-ref --short HEAD [26ms]
+[2022-03-09T13:13:57.329Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/bug-odometer refs/remotes/bug-odometer [39ms]
+[2022-03-09T13:13:57.356Z] > git remote --verbose [18ms]
+[2022-03-09T13:13:57.356Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [22ms]
+[2022-03-09T13:13:57.459Z] > git config --get commit.template [88ms]
+[2022-03-09T13:13:57.474Z] > git config --local branch.bug-odometer.github-pr-owner-number [23ms]
+[2022-03-09T13:13:57.512Z] > git config --local branch.bug-odometer.github-pr-owner-number [3ms]
+[2022-03-09T13:13:57.757Z] > git ls-files --stage -- /home/eddy/projects/driveulu/dga/docker/docker-compose.yml [5ms]
+[2022-03-09T13:13:57.778Z] > git cat-file -s 43a259130f36c46495f57b22dc1cc5ea5ff6b27e [13ms]
+[2022-03-09T13:14:00.316Z] > git fetch [3091ms]
+[2022-03-09T13:14:00.316Z] From github.com:driveulu/dga
+ * [new branch]      fully-cloud-scylla -> origin/fully-cloud-scylla
+[2022-03-09T13:14:00.354Z] > git symbolic-ref --short HEAD [1ms]
+[2022-03-09T13:14:00.370Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/bug-odometer refs/remotes/bug-odometer [2ms]
+[2022-03-09T13:14:00.401Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [16ms]
+[2022-03-09T13:14:00.402Z] > git remote --verbose [3ms]
+[2022-03-09T13:14:00.420Z] > git config --get commit.template [2ms]
+[2022-03-09T13:14:09.199Z] > git ls-files --stage -- /home/eddy/projects/driveulu/dga/apps/ulu_cloud/lib/ulu_cloud/history.ex [3ms]
+[2022-03-09T13:14:09.211Z] > git cat-file -s 8e226d6231c047d38cab719e5b23569cea207305 [1ms]

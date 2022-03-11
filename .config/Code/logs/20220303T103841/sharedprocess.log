@@ -1,0 +1,3 @@
+[2022-03-03 10:38:46.414] [sharedprocess] [info] Starting worker process with pid 1535035 (type: fileWatcher, window: 1).
+[2022-03-03 10:38:46.625] [sharedprocess] [info] Deleted from disk ms-vscode-remote.remote-ssh-edit /home/eddy/.vscode/extensions/ms-vscode-remote.remote-ssh-edit-0.74.0
+[2022-03-03 10:38:46.625] [sharedprocess] [info] Deleted from disk ms-vscode-remote.remote-ssh /home/eddy/.vscode/extensions/ms-vscode-remote.remote-ssh-0.74.0

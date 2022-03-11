@@ -1,0 +1,30 @@
+<application>
+  <component name="DynamicPluginEnabler">
+    <trackers>
+      <map>
+        <entry key="25mvP4VArT65cF7W88QqO0f82xW">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+      </map>
+    </trackers>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DBE.Init.Cfg.1" value="true" />
+    <property name="NonModalCommitCustomization.IsApplied" value="true" />
+    <property name="SqlStructureView.filterD.file.structure.state" value="true" />
+    <property name="appcds.runOnSecondStart" value="DB-213.6777.22-ccffbe4350f1a65ed4501e093426cda081561515149190cad019561e98a78728" />
+    <property name="ask.about.ctrl.y.shortcut.v2" value="true" />
+    <property name="bundled.plugins.list.saved.version" value="DB-213.6777.22" />
+    <property name="com.intellij.database.actions.ToolActions$ScriptingActionBase$MyDatabaseScriptDialog.proportion" value="0.5" />
+    <property name="file.gist.reindex.count" value="52" />
+    <property name="fileTypeChangedCounter" value="1" />
+    <property name="fileTypeDetectors" value="com.intellij.database.vfs.DbStorageFileType$Detector:com.intellij.ide.scratch.ScratchFileServiceImpl$Detector:org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector" />
+    <property name="got.it.tooltip.database.schema.control.got.it" value="1" />
+    <property name="ide.memory.adjusted" value="true" />
+    <property name="ide.updates.whats.new.shown.for" value="213" />
+    <property name="input.method.disabler.muted" value="true" />
+    <property name="registry.to.advanced.settings.migration.build" value="DB-213.6777.22" />
+  </component>
+</application>

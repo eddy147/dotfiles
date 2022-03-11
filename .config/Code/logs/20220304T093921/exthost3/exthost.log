@@ -1,0 +1,82 @@
+[2022-03-04 09:59:23.681] [exthost] [info] Extension host with pid 3641759 started
+[2022-03-04 09:59:23.681] [exthost] [info] Skipping acquiring lock for /home/eddy/.config/Code/User/workspaceStorage/54cd8ef16150fdf7e07a31b6f745c819.
+[2022-03-04 09:59:23.744] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+[2022-03-04 09:59:23.753] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-03-04 09:59:23.755] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-03-04 09:59:23.756] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-03-04 09:59:23.758] [exthost] [info] ExtensionService#_doActivateExtension alefragnani.project-manager, startup: true, activationEvent: '*'
+[2022-03-04 09:59:23.762] [exthost] [info] ExtensionService#_doActivateExtension christian-kohler.path-intellisense, startup: true, activationEvent: '*'
+[2022-03-04 09:59:23.769] [exthost] [info] ExtensionService#_doActivateExtension doiken.quick-searcher, startup: true, activationEvent: '*'
+[2022-03-04 09:59:23.771] [exthost] [info] ExtensionService#_doActivateExtension donjayamanne.githistory, startup: true, activationEvent: '*'
+[2022-03-04 09:59:23.782] [exthost] [info] ExtensionService#_doActivateExtension GitHub.vscode-pull-request-github, startup: true, activationEvent: '*'
+[2022-03-04 09:59:23.797] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.test-adapter-converter, startup: true, activationEvent: '*', root cause: hbenl.vscode-test-explorer
+[2022-03-04 09:59:23.799] [exthost] [info] ExtensionService#_doActivateExtension KnisterPeter.vscode-github, startup: true, activationEvent: '*'
+[2022-03-04 09:59:23.861] [exthost] [info] ExtensionService#_doActivateExtension mhutchie.git-graph, startup: true, activationEvent: '*'
+[2022-03-04 09:59:23.870] [exthost] [info] ExtensionService#_doActivateExtension RobbOwen.synthwave-vscode, startup: true, activationEvent: '*'
+[2022-03-04 09:59:23.872] [exthost] [info] ExtensionService#_doActivateExtension vortizhe.simple-ruby-erb, startup: true, activationEvent: '*'
+[2022-03-04 09:59:23.873] [exthost] [info] ExtensionService#_doActivateExtension xyz.local-history, startup: true, activationEvent: '*'
+[2022-03-04 09:59:23.886] [exthost] [info] ExtensionService#_doActivateExtension yzhang.markdown-all-in-one, startup: true, activationEvent: 'workspaceContains:README.md'
+[2022-03-04 09:59:23.939] [exthost] [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: yzhang.markdown-all-in-one
+[2022-03-04 09:59:24.038] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: donjayamanne.githistory
+[2022-03-04 09:59:24.058] [exthost] [info] ExtensionService#_doActivateExtension jebbs.plantuml, startup: false, activationEvent: 'api', root cause: yzhang.markdown-all-in-one
+[2022-03-04 09:59:24.124] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+[2022-03-04 09:59:24.393] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-03-04 09:59:24.396] [exthost] [info] ExtensionService#_doActivateExtension hbenl.vscode-test-explorer, startup: true, activationEvent: '*'
+[2022-03-04 09:59:24.419] [exthost] [info] Eager extensions activated
+[2022-03-04 09:59:24.427] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-04 09:59:24.431] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-04 09:59:24.432] [exthost] [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-04 09:59:24.438] [exthost] [info] ExtensionService#_doActivateExtension eamodio.gitlens, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-04 09:59:24.464] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-containers, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-04 09:59:24.484] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-wsl, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-04 09:59:24.487] [exthost] [info] ExtensionService#_doActivateExtension Trunk.io, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-04 09:59:24.736] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-03-04 09:59:24.738] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-03-04 09:59:24.747] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-03-04 10:00:03.201] [exthost] [info] ExtensionService#_doActivateExtension castwide.solargraph, startup: false, activationEvent: 'onLanguage:ruby'
+[2022-03-04 10:00:03.491] [exthost] [info] ExtensionService#_doActivateExtension kaiwood.endwise, startup: false, activationEvent: 'onLanguage:ruby'
+[2022-03-04 10:00:03.492] [exthost] [info] ExtensionService#_doActivateExtension misogi.ruby-rubocop, startup: false, activationEvent: 'onLanguage:ruby'
+[2022-03-04 10:00:03.496] [exthost] [info] ExtensionService#_doActivateExtension rebornix.ruby, startup: false, activationEvent: 'onLanguage:ruby'
+[2022-03-04 10:00:03.788] [exthost] [info] ExtensionService#_doActivateExtension GrapeCity.gc-excelviewer, startup: false, activationEvent: 'onLanguage:plaintext'
+[2022-03-04 10:00:36.978] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-04 10:01:49.198] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-09 08:31:18.990] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-03-09 08:31:19.012] [exthost] [error] An error occurred when deactivating the subscriptions for extension 'jebbs.plantuml':
+[2022-03-09 08:31:19.012] [exthost] [error] TypeError: Cannot read property 'dispose' of undefined
+	at UI.dispose (/home/eddy/.vscode/extensions/jebbs.plantuml-2.17.2/out/src/ui/ui.js:23:21)
+	at /home/eddy/.vscode/extensions/jebbs.plantuml-2.17.2/out/src/providers/previewer.js:37:87
+	at Array.map (<anonymous>)
+	at Previewer.dispose (/home/eddy/.vscode/extensions/jebbs.plantuml-2.17.2/out/src/providers/previewer.js:37:76)
+	at g (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:8:12307)
+	at d._deactivate (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:90:11931)
+	at /usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:90:10226
+	at Array.map (<anonymous>)
+	at deactivateAll (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:90:10214)
+	at _.terminate (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:94:880)
+	at c (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:104:36243)
+	at Socket.<anonymous> (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:104:33938)
+	at Socket.emit (events.js:327:22)
+	at Socket.EventEmitter.emit (domain.js:467:12)
+	at Pipe.<anonymous> (net.js:673:12)
+[2022-03-09 08:31:19.017] [exthost] [warning] {"name":"Canceled"}
+[2022-03-09 08:31:19.017] [exthost] [error] Canceled: Canceled
+	at Object.F [as canceled] (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:5:1172)
+	at n._remoteCall (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:89:13886)
+	at Proxy.y.<computed>.$.charCodeAt.y.<computed> (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:89:10294)
+	at f._doExecuteCommand (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:85:29651)
+	at f.executeCommand (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:85:29049)
+	at Object.executeCommand (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:99:31630)
+	at clearContext (/home/eddy/.vscode/extensions/trunk.io-0.2.1/out/index.js:44:17976)
+	at clearContexts (/home/eddy/.vscode/extensions/trunk.io-0.2.1/out/index.js:44:18141)
+	at Object.deactivate (/home/eddy/.vscode/extensions/trunk.io-0.2.1/out/index.js:44:37531)
+	at d._deactivate (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:90:11702)
+	at /usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:90:10226
+	at Array.map (<anonymous>)
+	at deactivateAll (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:90:10214)
+	at _.terminate (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:94:880)
+	at c (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:104:36243)
+	at Socket.<anonymous> (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:104:33938)
+	at Socket.emit (events.js:327:22)
+	at Socket.EventEmitter.emit (domain.js:467:12)
+	at Pipe.<anonymous> (net.js:673:12)
+[2022-03-09 08:31:19.017] [exthost] [info] Extension host with pid 3641759 exiting with code 0

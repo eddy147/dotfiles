@@ -103,6 +103,8 @@ PROMPT='%T %(?:%{%}➜ :%{%}➜ ) %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_i
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias vim="nvim"
+alias vi="nvim"
 alias scylla_cli="cqlsh 3.250.249.136 -u cassandra -p cassandra"
 alias ssh_dpa="ssh ubuntu@52.208.121.59 -i ~/.ssh/id_rsa_ulu"
 alias ssh_rta="ssh ubuntu@34.242.197.124 -i ~/.ssh/id_rsa_ulu"

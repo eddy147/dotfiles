@@ -1,0 +1,330 @@
+[2022-03-03 10:39:12.640] [exthost] [info] Extension host with pid 1536462 started
+[2022-03-03 10:39:12.640] [exthost] [info] Skipping acquiring lock for /home/eddy/.config/Code/User/workspaceStorage/405b93723a7b6495238cf53ad0eb15bf.
+[2022-03-03 10:39:12.714] [exthost] [info] ExtensionService#_doActivateExtension GrapeCity.gc-excelviewer, startup: false, activationEvent: 'onLanguage:plaintext'
+[2022-03-03 10:39:12.716] [exthost] [info] ExtensionService#_doActivateExtension iampeterbanjo.elixirlinter, startup: false, activationEvent: 'onLanguage:elixir'
+[2022-03-03 10:39:12.719] [exthost] [info] ExtensionService#_doActivateExtension JakeBecker.elixir-ls, startup: false, activationEvent: 'onLanguage:elixir'
+[2022-03-03 10:39:12.756] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+[2022-03-03 10:39:12.766] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-03-03 10:39:12.767] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-03-03 10:39:12.768] [exthost] [info] ExtensionService#_doActivateExtension alefragnani.project-manager, startup: true, activationEvent: '*'
+[2022-03-03 10:39:12.772] [exthost] [info] ExtensionService#_doActivateExtension christian-kohler.path-intellisense, startup: true, activationEvent: '*'
+[2022-03-03 10:39:12.779] [exthost] [info] ExtensionService#_doActivateExtension doiken.quick-searcher, startup: true, activationEvent: '*'
+[2022-03-03 10:39:12.780] [exthost] [info] ExtensionService#_doActivateExtension donjayamanne.githistory, startup: true, activationEvent: '*'
+[2022-03-03 10:39:12.794] [exthost] [info] ExtensionService#_doActivateExtension GitHub.vscode-pull-request-github, startup: true, activationEvent: '*'
+[2022-03-03 10:39:12.805] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.test-adapter-converter, startup: true, activationEvent: '*', root cause: hbenl.vscode-test-explorer
+[2022-03-03 10:39:12.807] [exthost] [info] ExtensionService#_doActivateExtension KnisterPeter.vscode-github, startup: true, activationEvent: '*'
+[2022-03-03 10:39:12.858] [exthost] [info] ExtensionService#_doActivateExtension mhutchie.git-graph, startup: true, activationEvent: '*'
+[2022-03-03 10:39:12.868] [exthost] [info] ExtensionService#_doActivateExtension RobbOwen.synthwave-vscode, startup: true, activationEvent: '*'
+[2022-03-03 10:39:12.871] [exthost] [info] ExtensionService#_doActivateExtension vortizhe.simple-ruby-erb, startup: true, activationEvent: '*'
+[2022-03-03 10:39:12.871] [exthost] [info] ExtensionService#_doActivateExtension xyz.local-history, startup: true, activationEvent: '*'
+[2022-03-03 10:39:12.883] [exthost] [info] ExtensionService#_doActivateExtension yzhang.markdown-all-in-one, startup: true, activationEvent: 'workspaceContains:README.md'
+[2022-03-03 10:39:12.924] [exthost] [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: yzhang.markdown-all-in-one
+[2022-03-03 10:39:13.074] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: donjayamanne.githistory
+[2022-03-03 10:39:13.106] [exthost] [info] ExtensionService#_doActivateExtension redhat.fabric8-analytics, startup: true, activationEvent: 'workspaceContains:**/package.json,**/pom.xml,**/requirements.txt,**/go.mod'
+[2022-03-03 10:39:13.143] [exthost] [info] ExtensionService#_doActivateExtension jebbs.plantuml, startup: false, activationEvent: 'api', root cause: yzhang.markdown-all-in-one
+[2022-03-03 10:39:13.224] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+[2022-03-03 10:39:13.521] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-03-03 10:39:13.523] [exthost] [info] ExtensionService#_doActivateExtension hbenl.vscode-test-explorer, startup: true, activationEvent: '*'
+[2022-03-03 10:39:13.549] [exthost] [info] Eager extensions activated
+[2022-03-03 10:39:13.571] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-03 10:39:13.575] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-03 10:39:13.576] [exthost] [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-03 10:39:13.583] [exthost] [info] ExtensionService#_doActivateExtension gitkraken.gitkraken-authentication, startup: false, activationEvent: 'onStartupFinished', root cause: eamodio.gitlens
+[2022-03-03 10:39:13.584] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-containers, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-03 10:39:13.609] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-wsl, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-03 10:39:13.612] [exthost] [info] ExtensionService#_doActivateExtension Trunk.io, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-03 10:39:13.681] [exthost] [info] ExtensionService#_doActivateExtension eamodio.gitlens, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-03 10:39:13.947] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-03-03 10:39:13.949] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-03-03 10:39:13.957] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-03-03 10:39:50.234] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 10:41:58.206] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 10:45:44.093] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 10:45:47.087] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 10:46:05.694] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 10:46:55.375] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 10:47:57.850] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 10:52:36.425] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 10:58:00.648] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 11:16:34.759] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 11:17:33.556] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 11:22:08.035] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 11:22:38.844] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 11:34:25.425] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 11:34:25.482] [exthost] [info] ExtensionService#_doActivateExtension foxundermoon.shell-format, startup: false, activationEvent: 'onLanguage:shellscript'
+[2022-03-03 11:34:25.490] [exthost] [info] ExtensionService#_doActivateExtension mads-hartmann.bash-ide-vscode, startup: false, activationEvent: 'onLanguage:shellscript'
+[2022-03-03 11:41:11.314] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 11:41:14.426] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 12:02:05.464] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 12:03:14.738] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 12:04:15.330] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 12:04:27.638] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 12:04:38.791] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 12:04:47.303] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 12:04:56.868] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 12:05:52.590] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 12:06:50.717] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 12:09:07.871] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 12:09:30.266] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 12:11:31.244] [exthost] [info] ExtensionService#_doActivateExtension ms-azuretools.vscode-docker, startup: false, activationEvent: 'onView:dockerContainers'
+[2022-03-03 12:14:34.056] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 12:14:43.755] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 12:14:50.342] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 12:14:55.283] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 12:15:07.910] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 13:12:12.484] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 13:12:32.000] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 13:12:32.088] [exthost] [info] ExtensionService#_doActivateExtension redhat.vscode-yaml, startup: false, activationEvent: 'onLanguage:dockercompose'
+[2022-03-03 13:12:32.373] [exthost] [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
+[2022-03-03 13:13:03.117] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 13:16:30.357] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 13:23:39.681] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 13:28:05.715] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 13:30:32.412] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 13:33:01.007] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 13:34:41.723] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 13:35:00.479] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 13:35:14.061] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 13:35:40.919] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 13:35:54.815] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 13:39:13.292] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 13:43:53.991] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 13:44:44.250] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 13:45:28.754] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 13:46:19.923] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 13:48:31.204] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 13:49:32.390] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 13:52:10.733] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 13:56:56.164] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:00:18.721] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:00:58.736] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:02:35.910] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:02:42.971] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:02:46.214] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:02:57.277] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:04:17.307] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:04:45.355] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:05:24.338] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:06:24.437] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:06:35.220] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:06:45.274] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:06:56.197] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:08:42.485] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:09:09.083] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:09:42.540] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:10:41.175] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:10:53.445] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:12:41.585] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:12:46.919] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:12:51.022] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:13:08.103] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:13:29.005] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:13:39.866] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:13:43.120] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:15:57.813] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:17:48.475] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:18:00.363] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:27:16.197] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:27:18.148] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:27:58.561] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:28:00.910] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:28:02.142] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:29:04.536] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:32:07.520] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:32:08.659] [exthost] [error] [redhat.vscode-yaml] provider FAILED
+[2022-03-03 14:32:08.659] [exthost] [error] Error: name must not be falsy
+	at Function.validate (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:84:31217)
+	at new i (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:84:31166)
+	at new i (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:84:17955)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403697)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at Array.map (<anonymous>)
+	at Object.asDocumentSymbols (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:409043)
+	at /home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:335095
+	at async u.provideDocumentSymbols (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:93:91164)
+[2022-03-03 14:32:36.274] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:34:04.618] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:34:05.041] [exthost] [error] [redhat.vscode-yaml] provider FAILED
+[2022-03-03 14:34:05.042] [exthost] [error] Error: name must not be falsy
+	at Function.validate (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:84:31217)
+	at new i (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:84:31166)
+	at new i (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:84:17955)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403697)
+	at H (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:403872)
+	at Array.map (<anonymous>)
+	at Object.asDocumentSymbols (/home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:409043)
+	at /home/eddy/.vscode/extensions/redhat.vscode-yaml-1.4.0/dist/extension.js:2:335095
+	at async u.provideDocumentSymbols (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:93:91164)
+[2022-03-03 14:34:40.057] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:34:54.386] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:38:27.724] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:38:55.133] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:40:50.079] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:42:49.632] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:46:58.437] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:49:01.148] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:49:21.486] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:49:33.907] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:57:10.669] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 14:57:14.540] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:00:42.882] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:01:29.797] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:05:22.910] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:06:04.818] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:07:58.152] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:09:34.399] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:09:51.621] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:10:24.246] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:11:41.418] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:11:42.043] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:11:49.127] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:12:31.625] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:12:59.394] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:13:14.769] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:14:58.385] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:18:49.497] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:19:09.162] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:20:14.024] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:22:48.390] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:24:39.055] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:24:48.263] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:24:49.670] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:28:54.879] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:32:26.877] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:33:24.335] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:33:45.784] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:34:08.019] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:34:08.714] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:34:50.021] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:39:57.028] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:40:04.947] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:40:55.390] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:41:01.652] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:41:04.345] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:41:06.562] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:41:10.264] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:41:26.156] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:47:03.410] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:49:09.611] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:49:15.491] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:49:34.887] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:50:08.780] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:51:29.488] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:52:17.146] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:52:37.982] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:53:25.023] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:53:48.344] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 15:56:59.527] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 16:00:54.152] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 16:04:24.486] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 16:57:09.290] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 16:57:16.657] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 17:12:41.056] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-03 17:24:51.413] [exthost] [warning] TextEditor is closed/disposed
+[2022-03-04 08:56:50.501] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-03-04 08:56:50.535] [exthost] [error] An error occurred when deactivating the subscriptions for extension 'iampeterbanjo.elixirlinter':
+[2022-03-04 08:56:50.535] [exthost] [error] TypeError: Cannot read property 'dispose' of undefined
+	at IdeExtensionProvider.dispose (/home/eddy/.vscode/extensions/iampeterbanjo.elixirlinter-0.4.1/out/src/ideExtensionProvider.js:8:26)
+	at ElixirLintingProvider.dispose (/home/eddy/.vscode/extensions/iampeterbanjo.elixirlinter-0.4.1/out/src/credoProvider.js:51:24)
+	at v (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:14:4963)
+	at w._deactivate (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:98:11899)
+	at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:98:10211
+	at Array.map (<anonymous>)
+	at w.deactivateAll (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:98:10198)
+	at p.terminate (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:102:735)
+	at s (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:112:36448)
+	at Socket.<anonymous> (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:112:34061)
+	at Socket.emit (events.js:327:22)
+	at Socket.EventEmitter.emit (domain.js:467:12)
+	at Pipe.<anonymous> (net.js:673:12)
+[2022-03-04 08:56:50.537] [exthost] [error] An error occurred when deactivating the subscriptions for extension 'jebbs.plantuml':
+[2022-03-04 08:56:50.537] [exthost] [error] TypeError: Cannot read property 'dispose' of undefined
+	at UI.dispose (/home/eddy/.vscode/extensions/jebbs.plantuml-2.17.2/out/src/ui/ui.js:23:21)
+	at /home/eddy/.vscode/extensions/jebbs.plantuml-2.17.2/out/src/providers/previewer.js:37:87
+	at Array.map (<anonymous>)
+	at Previewer.dispose (/home/eddy/.vscode/extensions/jebbs.plantuml-2.17.2/out/src/providers/previewer.js:37:76)
+	at v (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:14:4963)
+	at w._deactivate (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:98:11899)
+	at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:98:10211
+	at Array.map (<anonymous>)
+	at w.deactivateAll (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:98:10198)
+	at p.terminate (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:102:735)
+	at s (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:112:36448)
+	at Socket.<anonymous> (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:112:34061)
+	at Socket.emit (events.js:327:22)
+	at Socket.EventEmitter.emit (domain.js:467:12)
+	at Pipe.<anonymous> (net.js:673:12)
+[2022-03-04 08:56:50.549] [exthost] [warning] {"name":"Canceled"}
+[2022-03-04 08:56:50.563] [exthost] [error] Canceled: Canceled
+	at Object.F [as canceled] (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:5:1172)
+	at i._remoteCall (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:97:13875)
+	at Proxy.g.<computed>.M.charCodeAt.g.<computed> (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:97:10283)
+	at u._doExecuteCommand (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:93:29628)
+	at u.executeCommand (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:93:29026)
+	at Object.executeCommand (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:107:31240)
+	at clearContext (/home/eddy/.vscode/extensions/trunk.io-0.2.1/out/index.js:44:17976)
+	at clearContexts (/home/eddy/.vscode/extensions/trunk.io-0.2.1/out/index.js:44:18141)
+	at Object.deactivate (/home/eddy/.vscode/extensions/trunk.io-0.2.1/out/index.js:44:37531)
+	at w._deactivate (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:98:11670)
+	at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:98:10211
+	at Array.map (<anonymous>)
+	at w.deactivateAll (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:98:10198)
+	at p.terminate (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:102:735)
+	at s (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:112:36448)
+	at Socket.<anonymous> (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:112:34061)
+	at Socket.emit (events.js:327:22)
+	at Socket.EventEmitter.emit (domain.js:467:12)
+	at Pipe.<anonymous> (net.js:673:12)
+[2022-03-04 08:56:50.586] [exthost] [info] Extension host with pid 1536462 exiting with code 0

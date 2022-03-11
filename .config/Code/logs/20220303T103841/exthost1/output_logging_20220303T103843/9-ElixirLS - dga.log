@@ -1,0 +1,49 @@
+Started ElixirLS v0.8.2
+Elixir version: "1.10.4 (compiled with Erlang/OTP 23)"
+Erlang version: "23"
+ElixirLS compiled with Elixir 1.10.4 and erlang 22
+MIX_ENV: test
+MIX_TARGET: 
+
+10:38:45.667 [error] beam/beam_load.c(1879): Error loading module telemetry:
+  This BEAM file was compiled for a later version of the run-time system than 23.
+  To fix this, please recompile this module with an 23 compiler.
+  (Use of opcode 172; this emulator supports only up to 170.)
+
+
+
+10:38:45.670 [error] Loading of /home/eddy/projects/driveulu/dga/.elixir_ls/build/_test/lib/telemetry/ebin/telemetry.beam failed: :badfile
+
+
+10:38:45.680 [info]  Application phoenix exited: exited in: Phoenix.start(:normal, [])
+    ** (EXIT) an exception was raised:
+        ** (UndefinedFunctionError) function :telemetry.attach/4 is undefined (module :telemetry is not available)
+            (telemetry 0.4.2) :telemetry.attach({Phoenix.Logger, [:phoenix, :channel_handled_in]}, [:phoenix, :channel_handled_in], #Function<8.66935305/4 in Phoenix.Logger."-fun.phoenix_channel_handled_in/4-">, :ok)
+            (phoenix 1.4.17) lib/phoenix/logger.ex:52: anonymous fn/2 in Phoenix.Logger.install/0
+            (stdlib 3.13.2) maps.erl:233: :maps.fold_1/3
+            (phoenix 1.4.17) lib/phoenix/logger.ex:51: Phoenix.Logger.install/0
+            (phoenix 1.4.17) lib/phoenix.ex:48: Phoenix.start/2
+            (kernel 7.1) application_master.erl:277: :application_master.start_it_old/4
+
+10:38:45.680 [info]  Application plug exited: :stopped
+
+10:38:45.681 [info]  Application plug_crypto exited: :stopped
+
+10:38:45.681 [info]  Application mime exited: :stopped
+
+10:38:45.682 [info]  Application phoenix_pubsub exited: :stopped
+
+10:38:45.682 [info]  Application telemetry exited: :stopped
+
+10:38:45.682 [info]  Application eex exited: :stopped
+
+10:38:45.687 [error] Process #PID<0.125.0> raised an exception
+** (MatchError) no match of right hand side value: {:error, {:phoenix, {:bad_return, {{Phoenix, :start, [:normal, []]}, {:EXIT, {:undef, [{:telemetry, :attach, [{Phoenix.Logger, [:phoenix, :channel_handled_in]}, [:phoenix, :channel_handled_in], #Function<8.66935305/4 in Phoenix.Logger."-fun.phoenix_channel_handled_in/4-">, :ok], []}, {Phoenix.Logger, :"-install/0-fun-7-", 2, [file: 'lib/phoenix/logger.ex', line: 52]}, {:maps, :fold_1, 3, [file: 'maps.erl', line: 233]}, {Phoenix.Logger, :install, 0, [file: 'lib/phoenix/logger.ex', line: 51]}, {Phoenix, :start, 2, [file: 'lib/phoenix.ex', line: 48]}, {:application_master, :start_it_old, 4, [file: 'application_master.erl', line: 277]}]}}}}}}
+    (phoenix 1.4.17) lib/mix/tasks/compile.phoenix.ex:11: Mix.Tasks.Compile.Phoenix.run/1
+    (mix 1.10.4) lib/mix/task.ex:330: Mix.Task.run_task/3
+    (mix 1.10.4) lib/mix/tasks/compile.all.ex:76: Mix.Tasks.Compile.All.run_compiler/2
+    (mix 1.10.4) lib/mix/tasks/compile.all.ex:56: Mix.Tasks.Compile.All.do_compile/4
+    (mix 1.10.4) lib/mix/tasks/compile.all.ex:27: anonymous fn/2 in Mix.Tasks.Compile.All.run/1
+    (mix 1.10.4) lib/mix/tasks/compile.all.ex:43: Mix.Tasks.Compile.All.with_logger_app/2
+    (mix 1.10.4) lib/mix/task.ex:330: Mix.Task.run_task/3
+    (mix 1.10.4) lib/mix/project.ex:352: Mix.Project.in_project/4

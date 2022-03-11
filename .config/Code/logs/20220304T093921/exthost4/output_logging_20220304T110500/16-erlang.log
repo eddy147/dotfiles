@@ -1,0 +1,68 @@
+erlang extension is active
+starting : escript 
+/home/eddy/.vscode/extensions/pgourlain.erlang-0.8.4/rebar3 compile
+[0;32m===> Verifying dependencies...
+[0m
+[0;32m===> Cleaning out vscode_lsp...
+[0m
+[0;32m===> Analyzing applications...
+[0m
+[0;32m===> Compiling vscode_lsp
+[0m
+escript exit code:0
+starting : erl 
+-noshell -pa src -pa ebin -s int -vscode_port 42563 -s vscode_lsp_entry start 42563 
+Old inliner: threshold=0 functions=[{hex,1}]
+Old inliner: threshold=0 functions=[{object_key,2}]
+=ERROR REPORT==== 8-Mar-2022::09:16:44.871832 ===
+Method not handled: <<"$/setTraceNotification">>
+=ERROR REPORT==== 8-Mar-2022::09:16:48.740660 ===
+Method not handled: <<"$/setTraceNotification">>
+=ERROR REPORT==== 8-Mar-2022::09:16:51.654488 ===
+Method not handled: <<"$/setTraceNotification">>
+=ERROR REPORT==== 8-Mar-2022::09:17:06.695008 ===
+Method not handled: <<"$/setTraceNotification">>
+=ERROR REPORT==== 8-Mar-2022::09:17:09.563219 ===
+Method not handled: <<"$/setTraceNotification">>
+=ERROR REPORT==== 8-Mar-2022::09:17:10.955816 ===
+Method not handled: <<"$/setTraceNotification">>
+=ERROR REPORT==== 8-Mar-2022::09:18:31.324404 ===
+Method not handled: <<"$/setTraceNotification">>
+=ERROR REPORT==== 8-Mar-2022::09:18:32.913819 ===
+Method not handled: <<"$/setTraceNotification">>
+=ERROR REPORT==== 8-Mar-2022::09:18:42.524060 ===
+Method not handled: <<"$/setTraceNotification">>
+=ERROR REPORT==== 8-Mar-2022::09:22:11.749377 ===
+Method not handled: <<"$/setTraceNotification">>
+=ERROR REPORT==== 8-Mar-2022::09:22:32.001535 ===
+Method not handled: <<"$/setTraceNotification">>
+=ERROR REPORT==== 8-Mar-2022::09:28:57.791743 ===
+Method not handled: <<"$/setTraceNotification">>
+=ERROR REPORT==== 8-Mar-2022::09:29:01.659457 ===
+Method not handled: <<"$/setTraceNotification">>
+=ERROR REPORT==== 8-Mar-2022::09:29:05.787541 ===
+Method not handled: <<"$/setTraceNotification">>
+=ERROR REPORT==== 8-Mar-2022::09:29:11.174632 ===
+Method not handled: <<"$/setTraceNotification">>
+=ERROR REPORT==== 8-Mar-2022::09:29:13.642764 ===
+Method not handled: <<"$/setTraceNotification">>
+=ERROR REPORT==== 8-Mar-2022::09:29:27.932555 ===
+Method not handled: <<"$/setTraceNotification">>
+=ERROR REPORT==== 8-Mar-2022::09:29:34.894892 ===
+Method not handled: <<"$/setTraceNotification">>
+=ERROR REPORT==== 8-Mar-2022::09:29:51.186612 ===
+Method not handled: <<"$/setTraceNotification">>
+=ERROR REPORT==== 8-Mar-2022::09:29:57.409205 ===
+Method not handled: <<"$/setTraceNotification">>
+=ERROR REPORT==== 8-Mar-2022::09:30:04.630967 ===
+Method not handled: <<"$/setTraceNotification">>
+=ERROR REPORT==== 8-Mar-2022::09:30:13.230516 ===
+Method not handled: <<"$/setTraceNotification">>
+=ERROR REPORT==== 8-Mar-2022::09:30:36.448897 ===
+Method not handled: <<"$/setTraceNotification">>
+=ERROR REPORT==== 8-Mar-2022::10:34:16.929212 ===
+Method not handled: <<"$/setTraceNotification">>
+=ERROR REPORT==== 8-Mar-2022::16:05:08.489093 ===
+Method not handled: <<"$/setTraceNotification">>
+=ERROR REPORT==== 9-Mar-2022::08:31:42.279961 ===
+Method not handled: <<"$/setTraceNotification">>

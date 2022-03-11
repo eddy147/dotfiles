@@ -1,0 +1,19 @@
+[2022-03-03T02:38:44.251Z] Validating found git in: git
+[2022-03-03T02:38:44.271Z] Using git  from git
+[2022-03-03T02:38:44.348Z] > git rev-parse --git-dir [29ms]
+[2022-03-03T02:38:44.350Z] Open repository: /home/eddy/projects/driveulu/dga
+[2022-03-03T02:38:44.397Z] > git symbolic-ref --short HEAD [17ms]
+[2022-03-03T02:38:44.432Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/bug-odometer refs/remotes/bug-odometer [30ms]
+[2022-03-03T02:38:44.463Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [25ms]
+[2022-03-03T02:38:44.479Z] > git remote --verbose [34ms]
+[2022-03-03T02:38:44.520Z] > git config --get commit.template [30ms]
+[2022-03-03T02:38:44.528Z] > git config --local branch.bug-odometer.github-pr-owner-number [17ms]
+[2022-03-03T02:38:44.620Z] > git config --local branch.bug-odometer.github-pr-owner-number [6ms]
+[2022-03-03T02:38:44.902Z] > git ls-files --stage -- /home/eddy/projects/driveulu/dga/apps/processing/test/integration/odometer_test.exs [34ms]
+[2022-03-03T02:38:44.934Z] > git cat-file -s 5a40798a88ff6cfaf07e44527ef4eb6fe8358a7f [26ms]
+[2022-03-03T02:38:51.045Z] > git fetch [6689ms]
+[2022-03-03T02:38:51.104Z] > git symbolic-ref --short HEAD [4ms]
+[2022-03-03T02:38:51.131Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/bug-odometer refs/remotes/bug-odometer [4ms]
+[2022-03-03T02:38:51.167Z] > git remote --verbose [4ms]
+[2022-03-03T02:38:51.167Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [16ms]
+[2022-03-03T02:38:51.180Z] > git config --get commit.template [4ms]

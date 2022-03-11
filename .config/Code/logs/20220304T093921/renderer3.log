@@ -1,0 +1,9 @@
+[2022-03-04 09:59:23.115] [renderer3] [critical] Extension 'github.vscode-pull-request-github' wants API proposal 'commentTimestamp' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+[2022-03-04 10:00:03.746] [renderer3] [error] [Extension Host] Error: Unexpected SIGPIPE
+	at process.<anonymous> (/usr/share/code/resources/app/out/bootstrap.js:1:370)
+	at process.emit (events.js:315:20)
+[2022-03-04 10:00:04.716] [renderer3] [error] zsh:1: command not found: solargraph
+
+[2022-03-04 10:00:36.708] [renderer3] [error] [Extension Host] Error: Unexpected SIGPIPE
+	at process.<anonymous> (/usr/share/code/resources/app/out/bootstrap.js:1:370)
+	at process.emit (events.js:315:20)

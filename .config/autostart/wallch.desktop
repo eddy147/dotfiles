@@ -1,0 +1,9 @@
+
+[Desktop Entry]
+Type=Application
+Name=Wallch
+Exec=bash -c 'sleep 3 && /usr/bin/wallch --none'
+Terminal=false
+Icon=wallch
+Comment=Just show indicator
+Categories=Utility;Application;

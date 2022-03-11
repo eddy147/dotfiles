@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/eddy/.PhpStorm2018.3/config/colors'
-let g:netrw_dirhist_2='/etc/php/7.0'
-let g:netrw_dirhist_3='/home/eddy/xubuntu-local-development'
-let g:netrw_dirhist_4='/home/eddy/projects/python/creditcard-fraud/.idea'
-let g:netrw_dirhist_5='/home/eddy/onedark.vim'
-let g:netrw_dirhist_6='/etc/profile.d'

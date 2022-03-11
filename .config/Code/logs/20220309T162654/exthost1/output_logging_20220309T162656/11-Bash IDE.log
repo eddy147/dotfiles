@@ -1,0 +1,17 @@
+[Info  - 4:26:57 PM] BashLanguageServer initializing...
+Analyzing files matching glob "**/*@(.sh|.inc|.bash|.command)" inside /home/eddy/projects/driveulu/docker-ulu
+Glob resolved with 4 files after 0.006 seconds
+Analyzing file:///home/eddy/projects/driveulu/docker-ulu/environment.sh
+Analyzing file:///home/eddy/projects/driveulu/docker-ulu/kafka/wrapper.sh
+Skipping file file:///home/eddy/projects/driveulu/docker-ulu/kafka/wrapper.sh with shebang "/bin/bash Eeu"
+Analyzing file:///home/eddy/projects/driveulu/docker-ulu/postgres/create-multiple-postgresql-databases.sh
+Analyzing file:///home/eddy/projects/driveulu/docker-ulu/scylla/wrapper.sh
+Analyzer finished after 0.016 seconds
+[Info  - 4:26:57 PM] BashLanguageServer initialized
+onDocumentSymbol
+onDocumentHighlight 44:50 word=null
+onHover 25:29 word=null
+onHover 18:36 word="'scylladb/scylla-nightly:4.6.dev-0.20210826.acf8da2bc-aarch64'"
+onDocumentHighlight 18:36 word="'scylladb/scylla-nightly:4.6.dev-0.20210826.acf8da2bc-aarch64'"
+onHover 18:45 word="'scylladb/scylla-nightly:4.6.dev-0.20210826.acf8da2bc-aarch64'"
+onDocumentHighlight 40:8 word=null

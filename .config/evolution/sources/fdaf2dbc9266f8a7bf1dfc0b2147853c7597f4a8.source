@@ -1,0 +1,24 @@
+[Data Source]
+DisplayName=eddy.deboer@ulu.io
+Enabled=true
+Parent=
+
+[Authentication]
+Host=
+Method=Google
+Port=0
+ProxyUid=system-proxy
+RememberPassword=true
+User=eddy.deboer@ulu.io
+CredentialName=
+IsExternal=false
+
+[Collection]
+BackendName=google
+CalendarEnabled=true
+ContactsEnabled=true
+Identity=eddy.deboer@ulu.io
+MailEnabled=true
+AllowSourcesRename=false
+CalendarUrl=
+ContactsUrl=

@@ -1,0 +1,14 @@
+[2022-03-03 10:38:42.967] [renderer1] [info] IExtensionHostStarter.start() took 137 ms.
+[2022-03-03 10:38:43.104] [renderer1] [error] [Extension Host] (node:1534579) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `code --trace-deprecation ...` to show where the warning was created)
+[2022-03-03 10:38:43.263] [renderer1] [critical] Extension 'ms-vscode-remote.remote-ssh' appears in product.json but enables LESS API proposals than the extension wants.
+package.json (LOSES): resolvers, terminalDataWriteEvent, contribViewsRemote, telemetry
+product.json (WINS): resolvers, terminalDataWriteEvent, contribViewsRemote
+[2022-03-03 10:38:44.068] [renderer1] [error] [Extension Host] /bin/sh: 1: elixir: not found
+[2022-03-03 10:38:44.075] [renderer1] [error] spawn mix ENOENT: Error: spawn mix ENOENT
+	at Process.ChildProcess._handle.onexit (internal/child_process.js:269:19)
+	at onErrorNT (internal/child_process.js:465:16)
+	at processTicksAndRejections (internal/process/task_queues.js:80:21)
+[2022-03-03 10:38:44.076] [renderer1] [error] [Extension Host] Error: Unexpected SIGPIPE
+	at process.<anonymous> (/usr/share/code/resources/app/out/bootstrap.js:1:370)
+	at process.emit (events.js:315:20)

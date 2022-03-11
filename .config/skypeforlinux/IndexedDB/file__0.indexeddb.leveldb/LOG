@@ -1,0 +1,18 @@
+2022/03/09-16:50:26.061 3df280 Reusing MANIFEST /home/eddy/.config/skypeforlinux/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2022/03/09-16:50:26.061 3df280 Recovering log #1019
+2022/03/09-16:50:26.074 3df280 Reusing old log /home/eddy/.config/skypeforlinux/IndexedDB/file__0.indexeddb.leveldb/001019.log 
+2022/03/09-16:50:35.657 3df296 Level-0 table #1027: started
+2022/03/09-16:50:35.675 3df296 Level-0 table #1027: 1546136 bytes OK
+2022/03/09-16:50:35.681 3df296 Delete type=0 #1019
+2022/03/09-16:51:26.830 3df29b Compacting 1@1 + 4@2 files
+2022/03/09-16:51:26.891 3df29b Generated table #1028@1: 4552 keys, 2166300 bytes
+2022/03/09-16:51:26.926 3df29b Generated table #1029@1: 21153 keys, 2208186 bytes
+2022/03/09-16:51:26.964 3df29b Generated table #1030@1: 29936 keys, 2220852 bytes
+2022/03/09-16:51:26.996 3df29b Generated table #1031@1: 27386 keys, 2159701 bytes
+2022/03/09-16:51:26.996 3df29b Compacted 1@1 + 4@2 files => 8755039 bytes
+2022/03/09-16:51:26.998 3df29b compacted to: files[ 0 0 4 0 0 0 0 ]
+2022/03/09-16:51:26.998 3df29b Delete type=2 #1023
+2022/03/09-16:51:26.998 3df29b Delete type=2 #1024
+2022/03/09-16:51:26.998 3df29b Delete type=2 #1022
+2022/03/09-16:51:26.998 3df29b Delete type=2 #1021
+2022/03/09-16:51:26.998 3df29b Delete type=2 #1027
