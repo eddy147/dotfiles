@@ -1,7 +1,54 @@
+function retcode() {}
+
+if command -v theme.sh >/dev/null; then
+  [ -e ~/.theme_history ] && theme.sh "$(theme.sh -l | tail -n1)"
+
+  # Optional
+
+  # Bind C-o to the last theme.
+  last_theme() {
+    theme.sh "$(theme.sh -l | tail -n2 | head -n1)"
+  }
+
+  zle -N last_theme
+  bindkey '^O' last_theme
+
+  alias th='theme.sh -i'
+
+  # Interactively load a light theme
+  alias thl='theme.sh --light -i'
+
+  # Interactively load a dark theme
+  alias thd='theme.sh --dark -i'
+fi
+
+if command -v theme.sh >/dev/null; then
+  [ -e ~/.theme_history ] && theme.sh "$(theme.sh -l | tail -n1)"
+
+  # Optional
+
+  # Bind C-o to the last theme.
+  last_theme() {
+    theme.sh "$(theme.sh -l | tail -n2 | head -n1)"
+  }
+
+  zle -N last_theme
+  bindkey '^O' last_theme
+
+  alias th='theme.sh -i'
+
+  # Interactively load a light theme
+  alias thl='theme.sh --light -i'
+
+  # Interactively load a dark theme
+  alias thd='theme.sh --dark -i'
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.fzf/bin:$HOME/.asdf/bin:$HOME/.asdf/shims:$PATH
+export PATH=$PATH:$HOME/elixir-ls/release/language_server.sh
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -93,23 +140,5 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-#PROMPT='${ret_status}%{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} %D %T % %{$reset_color%}'
-PROMPT='%T %(?:%{%}➜ :%{%}➜ ) %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vim="nvim"
-alias vi="nvim"
-alias scylla_cli="cqlsh 3.250.249.136 -u cassandra -p cassandra"
-alias ssh_dpa="ssh ubuntu@52.208.121.59 -i ~/.ssh/id_rsa_ulu"
-alias ssh_rta="ssh ubuntu@34.242.197.124 -i ~/.ssh/id_rsa_ulu"
-alias ssh_observer="ssh ubuntu@34.240.69.137 -i ~/.ssh/id_rsa_ulu"
-alias ssh_tcp_server="ssh ubuntu@63.32.66.233 -i ~/.ssh/id_rsa_ulu"
-alias ssh_dga="ssh -i ~/.ssh/id_rsa_ulu ubuntu@3.249.101.57"
-alias ssh_dongleapps="ssh -i ~/.ssh/id_rsa_ulu ubuntu@54.195.37.145"
+source ~/.aliases
 neofetch
