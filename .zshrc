@@ -1,49 +1,3 @@
-function retcode() {}
-
-if command -v theme.sh >/dev/null; then
-  [ -e ~/.theme_history ] && theme.sh "$(theme.sh -l | tail -n1)"
-
-  # Optional
-
-  # Bind C-o to the last theme.
-  last_theme() {
-    theme.sh "$(theme.sh -l | tail -n2 | head -n1)"
-  }
-
-  zle -N last_theme
-  bindkey '^O' last_theme
-
-  alias th='theme.sh -i'
-
-  # Interactively load a light theme
-  alias thl='theme.sh --light -i'
-
-  # Interactively load a dark theme
-  alias thd='theme.sh --dark -i'
-fi
-
-if command -v theme.sh >/dev/null; then
-  [ -e ~/.theme_history ] && theme.sh "$(theme.sh -l | tail -n1)"
-
-  # Optional
-
-  # Bind C-o to the last theme.
-  last_theme() {
-    theme.sh "$(theme.sh -l | tail -n2 | head -n1)"
-  }
-
-  zle -N last_theme
-  bindkey '^O' last_theme
-
-  alias th='theme.sh -i'
-
-  # Interactively load a light theme
-  alias thl='theme.sh --light -i'
-
-  # Interactively load a dark theme
-  alias thd='theme.sh --dark -i'
-fi
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -57,7 +11,16 @@ export ZSH=$HOME/.oh-my-zsh
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
+#nice themes:
+#mira
+#af-magic
+#fino
+#muse
+#refined
+#simple
+ZSH_THEME="random"
+echo $RANDOM_THEME
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
