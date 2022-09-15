@@ -96,6 +96,7 @@ require('packer').startup(function(use)
   -- colorthemes
   -- use {'lmintmate/blue-mood-vim'}
   use {'andreasvc/vim-256noir'}
+  use {'wesgibbs/vim-irblack'}
 end)
 
 -- `on_attach` callback will be called after a language server
@@ -212,3 +213,5 @@ map("n", "<c-p>", ":Files<cr>", {silent = true, noremap = true})
 map("n", "<c-n>", ":NvimTreeToggle<cr>", {silent = true, noremap = true})
 map("n", "<c-f>", ":Ag<cr>", {silent = true, noremap = true})
 
+-- misc, like colorscheme etc
+cmd 'colorscheme ir_black'
