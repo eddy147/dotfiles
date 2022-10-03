@@ -2,25 +2,20 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.fzf/bin:$HOME/.asdf/bin:$HOME/.asdf/shims:$PATH
-export PATH=$PATH:$HOME/elixir-ls/release/language_server.sh
+export PATH=$PATH:$HOME/elixir-ls/language_server.sh
 
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="robbyrussell"
-#nice themes:
-#mira
-#af-magic
-#fino
-#muse
-#refined
-#simple
-ZSH_THEME="random"
-echo $RANDOM_THEME
+#ZSH_THEME="bureau"
+#ZSH_THEME="clean"
+ZSH_THEME="af-magic"
+#echo $RANDOM_THEME
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -97,11 +92,22 @@ source $ZSH/oh-my-zsh.sh
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
-#   export EDITOR='mvim'
+#   export EDITOR='nvim'
 # fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+. /home/eddy/.asdf/asdf.sh
+export PATH=~/.asdf/shims:$PATH
+export PATH=~/tools/DataGrip/bin:$PATH
+
 source ~/.aliases
-neofetch
