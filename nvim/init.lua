@@ -93,10 +93,13 @@ require('packer').startup(function(use)
   use {'ekalinin/dockerfile.vim'}
   use {'kevinhui/vim-docker-tools'}
 
+  use {'kyazdani42/nvim-web-devicons'}
+
   -- colorthemes
   -- use {'lmintmate/blue-mood-vim'}
   use {'andreasvc/vim-256noir'}
   use {'wesgibbs/vim-irblack'}
+  use {'sstallion/vim-wtf'}
 end)
 
 -- `on_attach` callback will be called after a language server
@@ -120,12 +123,12 @@ local on_attach = function(client, bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
 end
 
-local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 -- setting up the elixir language server
 -- you have to manually specify the entrypoint cmd for elixir-ls
 require('lspconfig').elixirls.setup {
-  cmd = { "/home/eddy/elixir-ls/release/language_server.sh" },
+  cmd = { "/home/eddy/elixir-ls/language_server.sh" },
   on_attach = on_attach,
   capabilities = capabilities
 }
@@ -214,4 +217,4 @@ map("n", "<c-n>", ":NvimTreeToggle<cr>", {silent = true, noremap = true})
 map("n", "<c-f>", ":Ag<cr>", {silent = true, noremap = true})
 
 -- misc, like colorscheme etc
-cmd 'colorscheme ir_black'
+cmd 'colorscheme wtf'
