@@ -3,6 +3,7 @@
 
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.fzf/bin:$HOME/.asdf/bin:$HOME/.asdf/shims:$PATH
 export PATH=$PATH:$HOME/elixir-ls/language_server.sh
+export PATH=$PATH:$HOME/.cargo/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -11,10 +12,10 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="robbyrussell"
+ZSH_THEME="robbyrussell"
 #ZSH_THEME="bureau"
 #ZSH_THEME="clean"
-ZSH_THEME="af-magic"
+#ZSH_THEME="af-magic"
 #echo $RANDOM_THEME
 
 # Set list of themes to pick from when loading at random
@@ -111,3 +112,33 @@ export PATH=~/.asdf/shims:$PATH
 export PATH=~/tools/DataGrip/bin:$PATH
 
 source ~/.aliases
+
+
+
+# Access to AWS SSM, see https://github.com/driveulu/handbook/blob/main/README.md#access-1
+
+aws_ssm() {
+        local ec2_name=$1
+        INSTANCE_ID=$(aws ec2 describe-instances \
+                --filter "Name=tag:Name,Values=${ec2_name}" \
+                --query "Reservations[].Instances[?State.Name == 'running'].InstanceId[]" \
+                --output text)
+        aws ssm start-session --target $INSTANCE_ID
+}
+
+export AWS_PROFILE=eddydeboer
+ACCOUNT_ID='766107116595'
+ROLE_NAME='developer'
+export $(printf "AWS_ACCESS_KEY_ID=%s AWS_SECRET_ACCESS_KEY=%s AWS_SESSION_TOKEN=%s xAWS_SESSION_TOKEN_EXPIRATION=%s" $(aws sts assume-role --duration-seconds 1800 --role-arn "arn:aws:iam::${ACCOUNT_ID}:role/${ROLE_NAME}" --role-session-name abc --query "Credentials.[AccessKeyId,SecretAccessKey,SessionToken,Expiration]" --output text))
+
+aws_dockr() {
+        local ec2_name=$1
+        INSTANCE_ID=$(aws ec2 describe-instances \
+                --filter "Name=tag:Name,Values=${ec2_name}" \
+                --query "Reservations[].Instances[?State.Name == 'running'].InstanceId[]" \
+                --output text)
+        aws ssm start-session --target $INSTANCE_ID --document-name AWS-StartInteractiveCommand --parameters command="docker exec -it $2 /bin/bash"
+}
+
+# Dockr is the server name
+# aws_ssm Dockr
