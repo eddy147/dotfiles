@@ -146,6 +146,10 @@ aws_ecr_latest_image() {
   aws ecr describe-images --repository-name $1 --query "sort_by(imageDetails,&imagePushedAt)[-${last_n:--1}:]" | jq '.[] | [.imagePushedAt, .imageTags]'
 }
 
+aws_list_ec2() {
+  aws --region eu-west-1 ec2 describe-instances
+}
+
 echo "aws_request_token".
 echo "aws_ssm <server>" 
 
