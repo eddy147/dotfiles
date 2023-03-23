@@ -100,6 +100,9 @@ require('packer').startup(function(use)
   use {'andreasvc/vim-256noir'}
   use {'wesgibbs/vim-irblack'}
   use {'sstallion/vim-wtf'}
+  use {'jsit/toast.vim'}
+  use {'rafi/awesome-vim-colorschemes'}
+  use {'stankovictab/mgz.nvim'}
 end)
 
 -- `on_attach` callback will be called after a language server
@@ -193,6 +196,14 @@ require'nvim-treesitter.configs'.setup {
   },
 }
 
+-- Set NvimTree width
+vim.g.nvim_tree_width = 40 -- Set the width to 30%
+
+-- Open NvimTree when starting Neovim
+vim.cmd('autocmd FileType NvimTree setlocal winwidth='..vim.g.nvim_tree_width)
+vim.cmd('autocmd VimEnter * NvimTreeToggle')
+
+
 -- search
 -- use ripgrep if exists
 if (vim.fn.executable('rg') ~= 0) then
@@ -216,5 +227,11 @@ map("n", "<c-p>", ":Files<cr>", {silent = true, noremap = true})
 map("n", "<c-n>", ":NvimTreeToggle<cr>", {silent = true, noremap = true})
 map("n", "<c-f>", ":Ag<cr>", {silent = true, noremap = true})
 
+--require "statusline";
+
 -- misc, like colorscheme etc
-cmd 'colorscheme wtf'
+--cmd 'colorscheme github'
+--cmd 'colorscheme minimalist'
+--cmd 'colorscheme paramount'
+--cmd 'colorscheme focuspoint'
+cmd 'colorscheme mgz'
