@@ -1,0 +1,25 @@
+[alias]
+tagcommit = rev-list -n 1
+showtag = show
+co = checkout
+br = branch
+c = commit
+st = status
+ll = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=iso
+lol = log --graph --decorate --pretty=oneline --abbrev-commit
+lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+[user]
+email = eddy147@gmail.com
+name = eddy147
+[diff]
+tool = vimdiff
+[core]
+editor = vim
+[pull]
+rebase = false
+[init]
+defaultBranch = main
+[push]
+default = simple
+[merge]
+tool = vimdiff
