@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.fzf/bin:$HOME/.asdf/bin:$HOME/.asdf/shims:$PATH
-export PATH=$PATH:$HOME/elixir-ls/language_server.sh
+export PATH=$PATH:$HOME/elixir-ls/release
 export PATH=$PATH:$HOME/.cargo/bin
 
 # Path to your oh-my-zsh installation.
@@ -66,6 +66,7 @@ export PATH=~/.asdf/shims:$PATH
 export PATH=~/tools/DataGrip/bin:$PATH
 
 source ~/.aliases
+source ~/.aliases-kubernetes
 
 # Access to AWS SSM, see https://github.com/driveulu/handbook/blob/main/README.md#access-1
 
@@ -122,3 +123,5 @@ aws_ssm() {
 aws_instances() {
         aws ec2 describe-instances --query 'Reservations[*].Instances[*].{Instance:InstanceId,State:State.Name,Name:Tags[?Key==`Name`]|[0].Value}' --output table
 }
+export PATH="/home/eddy/.krew/bin:/home/eddy/tools/DataGrip/bin:/home/eddy/.asdf/shims:/home/eddy/.asdf/shims:/home/eddy/.asdf/bin:/home/eddy/bin:/usr/local/bin:/home/eddy/.fzf/bin:/home/eddy/tools/DataGrip/bin:/home/eddy/bin:/usr/local/bin:/home/eddy/.fzf/bin:/home/eddy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/eddy/.local/share/JetBrains/Toolbox/scripts:/home/eddy/elixir-ls/release:/home/eddy/.cargo/bin:/home/eddy/.krew/bin:/home/eddy/elixir-ls/release:/home/eddy/.cargo/bin"
+export BUILDKIT_PROGRESS=plain

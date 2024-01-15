@@ -1,0 +1,44 @@
+## kubernetes aliases
+alias k='kubectl'
+alias kdr='kubectl --dry-run=client -o yaml'
+alias kns='kubens'
+alias kctx='kubectx'
+alias kube='kubectl'
+alias kscore='k score score '
+alias keti='kubectl exec -it'
+alias klog='kubectl logs'
+alias kdesc='kubectl describe'
+alias kgp='kubectl get pods'
+alias kg='kubectl get '
+alias kd='kubectl delete'
+alias kubegp='kubectl get pods'
+alias kubeevents='kubectl get events --sort-by=.metadata.creationTimestamp --field-selector type!=Normal'
+alias kwatchevents='kubectl get events -w --sort-by=.metadata.creationTimestamp --field-selector type!=Normal'
+alias kkitchen="kubectl run kitchen-debug --image markeijsermans/debug:kitchen-sink -it --rm --restart=Never --requests='cpu=1000m,memory=1024Mi' --privileged=true --limits='cpu=2000m,memory=2024Mi' --"
+alias kbusybox="kubectl run busybox-debug --image=busybox -it --rm --restart=Never  --requests='cpu=1000m,memory=1024Mi' --limits='cpu=2000m,memory=2024Mi'--privileged=true  --"
+alias kalpine="kubectl run alpine-debug --image=markeijsermans/debug:alpine -it --rm --restart=Never  --requests='cpu=1000m,memory=1024Mi' --limits='cpu=2000m,memory=2024Mi' --privileged=true  --"
+
+
+kubecleanevicted() {  
+		kube get pods -A |grep Evicted | awk '{ cmd="kubectl delete pod -n "$1" "$2; system(cmd) }';
+}
+
+export PATH="${PATH}:${HOME}/.krew/bin"
+
+## auto gather config
+function set-kubeconfig {
+  # Sets the KUBECONFIG environment variable to a dynamic concatentation of everything
+  # under ~/.kube/configs/*
+  # Does NOT overwrite KUBECONFIG if the KUBECONFIG_MANUAL env var is set
+
+  if [ -d ~/.kube/configs ]; then
+    if [ -z "$KUBECONFIG_MANUAL" ]; then
+      export KUBECONFIG=$(find -L ~/.kube/configs -name "*.yaml" -type f 2>/dev/null | xargs -I % echo -n ":%")
+    fi
+  fi
+}
+
+set-kubeconfig
+
+## Autocomplete
+source <(kubectl completion zsh)
