@@ -9,7 +9,8 @@ export PATH=$PATH:$HOME/.cargo/bin
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME='steeef'
+ZSH_THEME="agnoster-light"
+#ZSH_THEME='steeef'
 #ZSH_THEME='robbyrussell'
 #
 
