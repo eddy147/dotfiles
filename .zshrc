@@ -5,6 +5,7 @@ eval "$(termium shell-hook show pre)"
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.fzf/bin:$HOME/.asdf/bin:$HOME/.asdf/shims:$PATH
 export PATH=$PATH:$HOME/elixir-ls/language_server.sh
 export PATH=$PATH:$HOME/.cargo/bin
+export PATH=$PATH:$HOME/.local/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -128,12 +129,30 @@ aws_instances() {
         aws ec2 describe-instances --query 'Reservations[*].Instances[*].{Instance:InstanceId,State:State.Name,Name:Tags[?Key==`Name`]|[0].Value}' --output table
 }
 
+# just name the file on the server always a.txt in ssm root folder.
+aws_scp() {
+       local ec2_name=$1
+       INSTANCE_ID=$(aws ec2 describe-instances \
+               --filter "Name=tag:Name,Values=${ec2_name}" \
+               --query "Reservations[].Instances[?State.Name == 'running'].InstanceId[]" \
+               --output text)
+       aws ssm start-session --target $INSTANCE_ID \
+               --document-name AWS-StartNonInteractiveCommand \
+               --parameters '{"command":["cat /home/ssm-user/a.txt"]}' \
+               >~/Downloads/a.txt
+}
+
+
+# if you need to use more complex commands or include spaces in file paths, you might want to consider using shell escaping. For example:
+# --parameters '{"command":["sh -c \"cat /path/with spaces/file.txt\""]}'
+
+
 start_staging() {
         aws_mode stag && \
         aws lambda invoke --function-name eks_staging_autoscaling --region eu-west-1 /tmp/bla.json
 }
 
-export PATH="/home/eddy/.krew/bin:/home/eddy/tools/DataGrip/bin:/home/eddy/.asdf/shims:/home/eddy/.asdf/shims:/home/eddy/.asdf/bin:/home/eddy/bin:/usr/local/bin:/home/eddy/.fzf/bin:/home/eddy/tools/DataGrip/bin:/home/eddy/bin:/usr/local/bin:/home/eddy/.fzf/bin:/home/eddy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/eddy/.local/share/JetBrains/Toolbox/scripts:/home/eddy/elixir-ls/release:/home/eddy/.cargo/bin:/home/eddy/.krew/bin:/home/eddy/elixir-ls/release:/home/eddy/.cargo/bin"
+# export PATH="/home/eddy/.krew/bin:/home/eddy/tools/DataGrip/bin:/home/eddy/.asdf/shims:/home/eddy/.asdf/shims:/home/eddy/.asdf/bin:/home/eddy/bin:/usr/local/bin:/home/eddy/.fzf/bin:/home/eddy/tools/DataGrip/bin:/home/eddy/bin:/usr/local/bin:/home/eddy/.fzf/bin:/home/eddy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/eddy/.local/share/JetBrains/Toolbox/scripts:/home/eddy/elixir-ls/release:/home/eddy/.cargo/bin:/home/eddy/.krew/bin:/home/eddy/elixir-ls/release:/home/eddy/.cargo/bin":$PATH
 
 export BUILDKIT_PROGRESS=plain
 
