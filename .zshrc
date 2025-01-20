@@ -10,9 +10,10 @@ export PATH=$PATH:$HOME/.local/bin
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="agnoster-light"
+#ZSH_THEME="agnoster-light"
 #ZSH_THEME='steeef'
 #ZSH_THEME='robbyrussell'
+ZSH_THEME='bira'
 #
 
 ## Uncomment the following line to enable command auto-correction.
